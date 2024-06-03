@@ -220,6 +220,6 @@ if get(g:, 'cpp_simple_highlight', 0)
 endif
 
 " using same group as namespaces to match color when hovered
-syntax match cppSTLnamespace "\([a-zA-Z]\+::\)\+" conceal cchar=@
+syntax match cppSTLnamespace "\(\w\+::\)\+" conceal cchar=@
 " had to comment 'REF ßßß' to make below line work
 syntax match cppSTLnamespace "std::" conceal
